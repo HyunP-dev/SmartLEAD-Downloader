@@ -1,0 +1,23 @@
+{
+    "name": "SmartLEAD Downloader",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://smartlead.hallym.ac.kr/mod/vod/viewer.php"
+            ],
+            "js": [
+                "scripts/download.js"
+            ],
+            "css": [
+                "styles/download_icon.css"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "matches": ["https://smartlead.hallym.ac.kr/mod/vod/viewer.php"]
+        }
+    ]
+}
