@@ -5,10 +5,10 @@
     "content_scripts": [
         {
             "matches": [
-                "https://smartlead.hallym.ac.kr/mod/vod/viewer.php"
+                "https://smartlead.hallym.ac.kr/mod/vod/viewer.php*"
             ],
             "js": [
-                "scripts/download.js"
+                "scripts/add_button.js"
             ],
             "css": [
                 "styles/download_icon.css"
@@ -17,7 +17,8 @@
     ],
     "web_accessible_resources": [
         {
-            "matches": ["https://smartlead.hallym.ac.kr/mod/vod/viewer.php"]
+            "matches": ["https://smartlead.hallym.ac.kr/mod/vod/viewer.php*"],
+            "resources": ["scripts/*.js", "styles/*.css"]
         }
     ]
 }
